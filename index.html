@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <header>Put a meme on it!</header>
+
+  <main>
+    <form action="">
+      <div class="userInput" id="imgBar">
+        <label for="inputVal">Addy</label>
+        <input type="text" id="userInput"
+        placeholder="copy image address here">
+      </div>
+      
+      <div class="userInput" id="caption-top">
+          <label for="cap-top">Top Text</label>
+          <input type="text" id="text-top"
+          placeholder="meme caption">
+        </div>
+        <div class="userInput" id="caption-bottom">
+          <label for="cap-bottom">Bottom Text</label>
+          <input type="text" id="text-bottom"
+          placeholder="meme footer">
+      </div>
+      <input class="button" type="submit" onclick="getInputVal();">
+      
+      
+      <figure id="imageHTML">
+        <div class="text-div" id="top-div"></div>
+        <div class="text-div" id="bottom-div"></div>
+      </figure>
+    </main>
+  </form>
+  <button id="reloadButton" class="button" onClick="reloadPage()">Start Over</button>
+
+
+
+<script src="script.js"></script>
+</body>
+</html> 
