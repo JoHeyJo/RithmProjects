@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,38 @@
   <link rel="stylesheet" href="style.css">
   <title>Meme Generator</title>
 </head>
+
 <body>
   <header>Put a meme on it!</header>
 
   <main>
-    <form action="">
+    <form id="submit-form" action="">
       <div class="userInput" id="imgBar">
         <label for="inputVal">Addy</label>
-        <input type="text" id="userInput"
-        placeholder="copy image address here">
+        <input type="text" id="userInput" placeholder="copy image address here">
       </div>
-      
+
       <div class="userInput" id="caption-top">
-          <label for="cap-top">Top Text</label>
-          <input type="text" id="text-top"
-          placeholder="meme caption">
-        </div>
-        <div class="userInput" id="caption-bottom">
-          <label for="cap-bottom">Bottom Text</label>
-          <input type="text" id="text-bottom"
-          placeholder="meme footer">
+        <label for="cap-top">Top Text</label>
+        <input type="text" id="text-top" placeholder="meme caption">
       </div>
-      <input class="button" type="submit" onclick="getInputVal();">
-      
-      
+      <div class="userInput" id="caption-bottom">
+        <label for="cap-bottom">Bottom Text</label>
+        <input type="text" id="text-bottom" placeholder="meme footer">
+      </div>
+      <input type="submit" id="submit-button" value="submit">
+
       <figure id="imageHTML">
         <div class="text-div" id="top-div"></div>
         <div class="text-div" id="bottom-div"></div>
       </figure>
-    </main>
+  </main>
   </form>
-  <button id="reloadButton" class="button" onClick="reloadPage()">Start Over</button>
+  <button id="delete-button">Start Over</button>
 
-
-
-<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+
+</html>
